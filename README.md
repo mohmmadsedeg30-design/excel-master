@@ -1,15 +1,15 @@
 # 🚀 Excel Master v2.0
 
-مشروع تعليمي شامل لتعلم Excel في بيئة لينكس (Termux) باستخدام أدوات سطر الأوامر.
+A comprehensive educational project to learn Excel in a Linux environment (Termux) using command-line tools.
 
-## 📁 هيكل المشروع
+## 📁 Project Structure
 ```text
 excel-master/
-├── excel-master.sh          # السكربت الرئيسي
+├── excel-master.sh          # Main script
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-├── docs/                      # الدروس والوثائق
+├── docs/                      # Tutorials and Documentation
 │   ├── 01-basics.md
 │   ├── 02-formulas.md
 │   ├── 03-functions.md
@@ -17,60 +17,59 @@ excel-master/
 │   ├── 05-charts.md
 │   ├── 06-vba-basics.md
 │   └── 07-data-analysis.md
-├── math-logic/                # المنطق الرياضي
+├── math-logic/                # Mathematical Logic
 │   ├── probability.sh
 │   ├── statistics.sh
 │   ├── linear-regression.sh
 │   └── distributions.sh
-├── generators/                # مولدات البيانات
-├── challenges/                # التحديات
+├── generators/                # Data Generators
+├── challenges/                # Challenges
 │   ├── beginner.md
 │   ├── intermediate.md
 │   └── advanced.md
-├── examples/                  # أمثلة جاهزة
+├── examples/                  # Ready Examples
 │   ├── vlookup-example.csv
 │   ├── pivot-example.csv
 │   └── if-example.csv
-└── utils/                     # أدوات مساعدة
+└── utils/                     # Utility Tools
     ├── colors.sh
     ├── validators.sh
     └── exporters.sh
 ```
 
-## 📋 المتطلبات
-| الأداة | الأمر للتثبيت |
+## 📋 Requirements
+| Tool | Installation Command |
 |--------|----------------|
 | bc     | `apt install bc` |
 | awk    | `apt install gawk` |
 
-## 🎯 الاستخدام السريع
-1. تعلم أساسيات Excel
-2. توليد بيانات تدريبية
-3. المنطق الرياضي
-4. وضع التحدي
-5. عرض وتحليل الملفات
-6. مسح البيانات
-7. قراءة الدروس
+## 🎯 Quick Start
+1. Learn Excel Basics
+2. Generate Training Data (CSV)
+3. Mathematical and Statistical Logic
+4. Challenges Mode
+5. View Lessons and Documentation
+6. Exit
 
-## 📊 التوزيعات المستخدمة
-| التوزيع | الاستخدام |
+## 📊 Used Distributions
+| Distribution | Usage |
 |---------|-----------|
-| Normal  | الرواتب، الدرجات، الأداء |
-| Poisson | سنوات الخبرة، عدد الطلبات |
-| Exponential | الكميات، المصروفات |
-| Binomial | نجاح/فشل، نسبة القبول |
-| Log-Normal | الثروة، الدخل |
-| Weibull | عمر المنتجات |
+| Normal  | Salaries, Grades, Performance |
+| Poisson | Years of experience, Number of orders |
+| Exponential | Quantities, Expenses |
+| Binomial | Success/Failure, Acceptance rate |
+| Log-Normal | Wealth, Income |
+| Weibull | Product lifespan |
 
-## 🎓 مسار التعلم
-المبتدئ → المتوسط → المتقدم
+## 🎓 Learning Path
+Beginner → Intermediate → Advanced
    ↓         ↓          ↓
  SUM/IF   VLOOKUP    VBA Macros
  AVERAGE  Pivot      Power Query
  COUNT    CORREL     Solver
 
-## 🤝 المساهمة
-نرحب بمساهماتكم! افتح Issue أو Pull Request.
+## 🤝 Contribution
+Contributions are welcome! Open an Issue or Pull Request.
 
-## 📄 الرخصة
-MIT License - استخدمه كما تشاء!
+## 📄 License
+MIT License - Use it as you wish!

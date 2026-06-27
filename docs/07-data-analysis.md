@@ -1,18 +1,18 @@
-# 🔬 تحليل البيانات المتقدم
+# 🔬 Advanced Data Analysis
 
 ## Power Query (Get & Transform)
 Data → Get Data → From File/From Database/From Web
 
-### خطوات التحويل الشائعة
+### Common Transformation Steps
 
-| التحويل | الوظيفة |
+| Transformation | Function |
 |---------|---------|
-| Remove Duplicates | إزالة التكرارات |
-| Split Column | تقسيم عمود |
-| Merge Queries | دمج جداول |
-| Pivot/Unpivot | تدوير البيانات |
-| Group By | تجميع |
-| Add Conditional Column | عمود شرطي |
+| Remove Duplicates | Remove duplicates |
+| Split Column | Split a column |
+| Merge Queries | Merge tables |
+| Pivot/Unpivot | Rotate data |
+| Group By | Aggregate |
+| Add Conditional Column | Conditional column |
 
 ## Power Pivot
 Power Pivot → Manage → Add to Data Model
@@ -27,31 +27,31 @@ YTD Sales = TOTALYTD(SUM(Sales[Amount]), Sales[Date])
 ## What-If Analysis
 ### Goal Seek
 Data → What-If Analysis → Goal Seek
-احسب القيمة المطلوبة لتحقيق هدف.
+Calculate the required value to achieve a goal.
 
 ### Data Table
 Data → What-If Analysis → Data Table
-جدول حساسية لمتغيرين.
+Sensitivity table for two variables.
 
 ### Scenario Manager
 Data → What-If Analysis → Scenario Manager
-مقارنة سيناريوهات مختلفة.
+Compare different scenarios.
 
 ## Solver
 Data → Solver
-الأمثلية (Maximize/Minimize) مع قيود.
+Optimization (Maximize/Minimize) with constraints.
 
 ## Analysis ToolPak
 File → Options → Add-ins → Analysis ToolPak
 
-### الأدوات المتاحة
-| الأداة | الوظيفة |
+### Available Tools
+| Tool | Function |
 |--------|---------|
-| Anova | تحليل التباين |
-| Correlation | مصفوفة الارتباط |
-| Regression | الانحدار الخطي |
-| t-Test | اختبار الفرق |
-| F-Test | اختبار التباين |
-| Histogram | التوزيع التكراري |
-| Random Number Generation | توليد أرقام عشوائية |
-| Sampling | العينات |
+| Anova | Analysis of Variance |
+| Correlation | Correlation Matrix |
+| Regression | Linear Regression |
+| t-Test | Difference Test |
+| F-Test | Variance Test |
+| Histogram | Frequency Distribution |
+| Random Number Generation | Generate random numbers |
+| Sampling | Sampling |

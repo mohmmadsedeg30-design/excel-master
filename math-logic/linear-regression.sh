@@ -1,6 +1,6 @@
 #!/bin/bash
 # ╔═══════════════════════════════════════════════════════════════════════════════╗
-# ║                    📈 الانحدار الخطي والتنبؤ                                  ║
+# ║                    📈 Linear Regression and Prediction                        ║
 # ╚═══════════════════════════════════════════════════════════════════════════════╝
 
 linear_regression() {
@@ -75,20 +75,20 @@ multiple_regression() {
 
 show_regression_help() {
     echo -e "${CYAN}╔═══════════════════════════════════════════════════════════════════════════════╗${NC}"
-    echo -e "${CYAN}║${NC} ${BOLD}📈 الانحدار الخطي${NC}"
+    echo -e "${CYAN}║${NC} ${BOLD}📈 Linear Regression${NC}"
     echo -e "${CYAN}╚═══════════════════════════════════════════════════════════════════════════════╝${NC}"
     echo ""
-    echo -e "${YELLOW}الانحدار الخطي البسيط:${NC}"
+    echo -e "${YELLOW}Simple Linear Regression:${NC}"
     echo -e "  y = mx + b"
     echo -e "  • m = Σ[(xi-x̄)(yi-ȳ)] / Σ(xi-x̄)²"
     echo -e "  • b = ȳ - m×x̄"
     echo ""
-    echo -e "${YELLOW}معامل التحديد (R²):${NC}"
-    echo -e "  يقيس قوة العلاقة (0 إلى 1)"
-    echo -e "  1.0 = تنبؤ مثالي"
+    echo -e "${YELLOW}Coefficient of Determination (R²):${NC}"
+    echo -e "  Measures relationship strength (0 to 1)"
+    echo -e "  1.0 = Perfect prediction"
     echo ""
-    echo -e "${YELLOW}الاستخدام:${NC}"
-    echo -e "  linear_regression(file.csv 5 8)  ← x=عمود5, y=عمود8"
+    echo -e "${YELLOW}Usage:${NC}"
+    echo -e "  linear_regression(file.csv 5 8)  ← x=col5, y=col8"
     echo -e "  predict 2.5 10 20  ← y = 2.5×20 + 10"
     echo ""
 }

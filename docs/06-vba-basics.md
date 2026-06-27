@@ -1,18 +1,18 @@
-# 💻 أساسيات برمجة VBA
+# 💻 VBA Programming Basics
 
-## محرر الأكواد (VBE)
-`Alt + F11` لفتح المحرر.
+## Visual Basic Editor (VBE)
+`Alt + F11` to open the editor.
 
-## المتغيرات
+## Variables
 ```vba
-Dim name As String      ' نص
-Dim age As Integer      ' عدد صحيح
-Dim salary As Double    ' عدد عشري
-Dim isActive As Boolean ' صح/خطأ
-Dim hireDate As Date    ' تاريخ
+Dim name As String      ' Text
+Dim age As Integer      ' Integer
+Dim salary As Double    ' Decimal
+Dim isActive As Boolean ' True/False
+Dim hireDate As Date    ' Date
 ```
 
-## الحلقات
+## Loops
 ```vba
 ' For Loop
 For i = 1 To 10
@@ -30,7 +30,7 @@ Do While i <= 10
 Loop
 ```
 
-## الشروط
+## Conditions
 ```vba
 If salary > 10000 Then
     bonus = salary * 0.1
@@ -41,23 +41,23 @@ Else
 End If
 ```
 
-## التعامل مع الأوراق
+## Working with Sheets
 ```vba
-' إضافة ورقة
+' Add a sheet
 Worksheets.Add
 
-' تسمية ورقة
-ActiveSheet.Name = "المبيعات"
+' Rename a sheet
+ActiveSheet.Name = "Sales"
 
-' نسخ ورقة
+' Copy a sheet
 Worksheets("Sheet1").Copy After:=Worksheets("Sheet2")
 
-' حذف ورقة
+' Delete a sheet
 Worksheets("Temp").Delete
 ```
 
-## تسجيل Macro
-Developer → Record Macro → قم بالإجراءات → Stop Recording
+## Recording a Macro
+Developer → Record Macro → Perform actions → Stop Recording
 
-## تشغيل Macro
-`Alt + F8` → اختر الماكرو → Run
+## Running a Macro
+`Alt + F8` → Select macro → Run

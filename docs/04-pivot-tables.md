@@ -1,43 +1,43 @@
-# 📊 الجداول المحورية (Pivot Tables)
+# 📊 Pivot Tables
 
-## إنشاء Pivot Table
-1. حدد نطاق البيانات
-2. Insert → PivotTable
-3. اختر الموقع (ورقة جديدة أو موجودة)
-4. اسحب الحقول للمناطق
+## Creating a Pivot Table
+1. Select the data range.
+2. Insert → PivotTable.
+3. Choose location (New or Existing Worksheet).
+4. Drag fields to areas.
 
-## مناطق Pivot Table
+## Pivot Table Areas
 
-| المنطقة | الوظيفة | مثال |
+| Area | Function | Example |
 |---------|---------|------|
-| **Filters** | تصفية البيانات | سنة معينة |
-| **Columns** | الأعمدة | الأشهر |
-| **Rows** | الصفوف | المنتجات |
-| **Values** | القيم | Sum, Average, Count |
+| **Filters** | Filter data | Specific year |
+| **Columns** | Columns | Months |
+| **Rows** | Rows | Products |
+| **Values** | Values | Sum, Average, Count |
 
-## أنواع التجميع
+## Aggregation Types
 ```excel
-Sum          ← المجموع
-Average      ← المتوسط
-Count        ← العدد
-Max/Min      ← الأقصى/الأدنى
-Product      ← الضرب
-StdDev       ← الانحراف المعياري
-Var          ← التباين
+Sum          ← Sum
+Average      ← Average
+Count        ← Count
+Max/Min      ← Maximum/Minimum
+Product      ← Multiplication
+StdDev       ← Standard Deviation
+Var          ← Variance
 ```
 
-## Pivot Table محسّن (Calculated Fields)
+## Enhanced Pivot Table (Calculated Fields)
 PivotTable Analyze → Fields, Items & Sets → Calculated Field
-مثال: `= Revenue * 0.15` ← حساب العمولة 15%
+Example: `= Revenue * 0.15` ← Calculate 15% commission.
 
-## الجداول المحورية المتقدمة
+## Advanced Pivot Tables
 ### Timeline
-Insert → Timeline → اختر حقل التاريخ
-تصفية بسحب شريط زمني.
+Insert → Timeline → Select date field.
+Filter by dragging a time bar.
 
 ### Slicer
-Insert → Slicer → اختر الحقل
-أزرار تصفية تفاعلية.
+Insert → Slicer → Select field.
+Interactive filter buttons.
 
 ### Pivot Chart
-Insert → PivotChart لكل رسم.
+Insert → PivotChart for each drawing.

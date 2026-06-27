@@ -1,62 +1,62 @@
-# 🎯 تحديات المستوى: متوسط
+# 🎯 Level: Intermediate Challenges
 
-## التحدي 6: التحليل الإحصائي
-**البيانات:** students.csv
-**المطلوب:**
-1. احسب المتوسط، الوسيط، الانحراف المعياري
-2. استخدم الدوال: AVERAGE, MEDIAN, STDEV.S
+## Challenge 6: Statistical Analysis
+**Data:** students.csv
+**Requirements:**
+1. Calculate the Mean, Median, and Standard Deviation.
+2. Use functions: AVERAGE, MEDIAN, STDEV.S.
 
-**الإجابة:**
+**Answer:**
 ```excel
 =AVERAGE(D:D)
 =MEDIAN(D:D)
 =STDEV.S(D:D)
 ```
 
-## التحدي 7: معامل الارتباط
-**البيانات:** sales.csv
-**المطلوب:**
-هل هناك علاقة بين الخصم والرضا؟
-استخدم CORREL
+## Challenge 7: Correlation Coefficient
+**Data:** sales.csv
+**Requirements:**
+Is there a relationship between discount and satisfaction?
+Use CORREL.
 
-**الإجابة:**
+**Answer:**
 ```excel
 =CORREL(J:J, L:L)
 ```
-**تفسير:**
-- 1.0 = علاقة طردية مثالية
-- -1.0 = علاقة عكسية مثالية
-- 0 = لا توجد علاقة
+**Interpretation:**
+- 1.0 = Perfect positive relationship
+- -1.0 = Perfect negative relationship
+- 0 = No relationship
 
-## التحدي 8: التنبؤ بالمبيعات
-**البيانات:** sales.csv
-**المطلوب:**
-تنبؤ بالمبيعات المستقبلية بناءً على الاتجاه
-استخدم FORECAST.LINEAR
+## Challenge 8: Sales Forecasting
+**Data:** sales.csv
+**Requirements:**
+Predict future sales based on the trend.
+Use FORECAST.LINEAR.
 
-**الإجابة:**
+**Answer:**
 ```excel
 =FORECAST.LINEAR(13, known_y, known_x)
 ```
 
-## التحدي 9: التجميع الشرطي المتعدد
-**البيانات:** employees.csv
-**المطلوب:**
-متوسط راتب Senior في قسم IT
-استخدم AVERAGEIFS
+## Challenge 9: Multiple Conditional Aggregation
+**Data:** employees.csv
+**Requirements:**
+Average salary of Seniors in the IT department.
+Use AVERAGEIFS.
 
-**الإجابة:**
+**Answer:**
 ```excel
 =AVERAGEIFS(E:E, C:C, "IT", D:D, "Senior")
 ```
 
-## التحدي 10: دمج البيانات
-**البيانات:** employees.csv + departments.csv
-**المطلوب:**
-أضف اسم المدير لكل موظف
-استخدم XLOOKUP أو INDEX+MATCH
+## Challenge 10: Data Merging
+**Data:** employees.csv + departments.csv
+**Requirements:**
+Add the manager's name for each employee.
+Use XLOOKUP or INDEX+MATCH.
 
-**الإجابة:**
+**Answer:**
 ```excel
-=XLOOKUP(C2, departments!A:A, departments!C:C, "غير موجود")
+=XLOOKUP(C2, departments!A:A, departments!C:C, "Not Found")
 ```

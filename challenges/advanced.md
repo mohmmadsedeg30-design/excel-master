@@ -1,26 +1,26 @@
-# 🎯 تحديات المستوى: متقدم
+# 🎯 Level: Advanced Challenges
 
-## التحدي 11: لوحة تحكم تفاعلية
-**المطلوب:**
-1. اعمل Dashboard يحتوي على:
-   - رسم بياني للمبيعات الشهرية
-   - KPI cards (إجمالي، متوسط، أعلى)
-   - Slicer للتصفية حسب المنطقة
+## Challenge 11: Interactive Dashboard
+**Requirements:**
+1. Create a Dashboard containing:
+   - Monthly sales chart.
+   - KPI cards (Total, Average, Max).
+   - Slicer to filter by region.
 
-**الخطوات:**
-1. أنشئ Pivot Tables للبيانات المطلوبة
-2. Insert → PivotChart لكل رسم
-3. Insert → Slicer للتصفية
-4. اربط كل الرسوم بـ Slicer واحد
-5. صمم التخطيط بشكل احترافي
+**Steps:**
+1. Create Pivot Tables for the required data.
+2. Insert → PivotChart for each chart.
+3. Insert → Slicer for filtering.
+4. Connect all charts to a single Slicer.
+5. Design the layout professionally.
 
-## التحدي 12: VBA Macro للتقارير
-**المطلوب:**
-1. ماكرو يولد تقرير تلقائي يومياً
-2. يجمع البيانات من عدة أوراق
-3. يرسل النتيجة بالبريد
+## Challenge 12: VBA Macro for Reports
+**Requirements:**
+1. A macro that generates an automatic daily report.
+2. Collects data from multiple sheets.
+3. Sends the result by email.
 
-**الكود:**
+**Code:**
 ```vba
 Sub DailyReport()
     Dim ws As Worksheet
@@ -40,47 +40,47 @@ Sub DailyReport()
     reportWs.Columns.AutoFit
     ActiveWorkbook.Save
     
-    MsgBox "تم إنشاء التقرير بنجاح!"
+    MsgBox "Report created successfully!"
 End Sub
 ```
 
-## التحدي 13: Power Query ETL
-**المطلوب:**
-1. استورد بيانات من 3 ملفات CSV
-2. نظف البيانات (إزالة فراغات، توحيد التنسيق)
-3. ادمجها في جدول واحد
-4. حدث تلقائياً
+## Challenge 13: Power Query ETL
+**Requirements:**
+1. Import data from 3 CSV files.
+2. Clean the data (remove spaces, unify format).
+3. Merge them into a single table.
+4. Refresh automatically.
 
-**الخطوات:**
-1. Data → Get Data → From File → From Folder
-2. اختر مجلد CSV
+**Steps:**
+1. Data → Get Data → From File → From Folder.
+2. Select CSV folder.
 3. Transform Data:
-   - Trim لكل الأعمدة النصية
-   - Change Type للتواريخ
-   - Remove Duplicates
-4. Merge Queries حسب المفتاح
-5. Close & Load to Data Model
-6. Properties → Refresh every 30 minutes
+   - Trim for all text columns.
+   - Change Type for dates.
+   - Remove Duplicates.
+4. Merge Queries by key.
+5. Close & Load to Data Model.
+6. Properties → Refresh every 30 minutes.
 
-## التحدي 14: تحليل الانحدار
-**البيانات:** sales.csv
-**المطلوب:**
-احسب معادلة الانحدار: Revenue = a + b×Quantity + c×Discount
-استخدم Analysis ToolPak
+## Challenge 14: Regression Analysis
+**Data:** sales.csv
+**Requirements:**
+Calculate the regression equation: Revenue = a + b×Quantity + c×Discount.
+Use Analysis ToolPak.
 
-**الخطوات:**
-1. Data → Analysis ToolPak → Regression
-2. Input Y Range: Revenue
-3. Input X Range: Quantity, Discount
-4. Output: New Worksheet
+**Steps:**
+1. Data → Analysis ToolPak → Regression.
+2. Input Y Range: Revenue.
+3. Input X Range: Quantity, Discount.
+4. Output: New Worksheet.
 
-## التحدي 15: محاكاة مونت كارلو
-**المطلوب:**
-قدّر احتمالية خسارة المشروع
-استخدم توزيع طبيعي للمتغيرات
-شغل 10,000 محاكاة
+## Challenge 15: Monte Carlo Simulation
+**Requirements:**
+Estimate project loss probability.
+Use normal distribution for variables.
+Run 10,000 simulations.
 
-**الكود VBA:**
+**VBA Code:**
 ```vba
 Sub MonteCarlo()
     Dim i As Long
@@ -99,6 +99,6 @@ Sub MonteCarlo()
         If profit < 0 Then lossCount = lossCount + 1
     Next i
     
-    MsgBox "احتمالية الخسارة: " & (lossCount / 10000) * 100 & "%"
+    MsgBox "Loss Probability: " & (lossCount / 10000) * 100 & "%"
 End Sub
 ```

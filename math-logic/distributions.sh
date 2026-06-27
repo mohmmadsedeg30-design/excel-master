@@ -1,6 +1,6 @@
 #!/bin/bash
 # ╔═══════════════════════════════════════════════════════════════════════════════╗
-# ║                    📊 التوزيعات الإحصائية المستخدمة                            ║
+# ║                    📊 Statistical Distributions                               ║
 # ╚═══════════════════════════════════════════════════════════════════════════════╝
 
 box_muller() {
@@ -72,27 +72,27 @@ weibull_distribution() {
 
 show_distributions() {
     echo -e "${CYAN}╔═══════════════════════════════════════════════════════════════════════════════╗${NC}"
-    echo -e "${CYAN}║${NC} ${BOLD}📊 التوزيعات الإحصائية في المشروع${NC}"
+    echo -e "${CYAN}║${NC} ${BOLD}📊 Statistical Distributions in the Project${NC}"
     echo -e "${CYAN}╚═══════════════════════════════════════════════════════════════════════════════╝${NC}"
     echo ""
     echo -e "${YELLOW}1. Normal (Box-Muller):${NC}"
-    echo -e "   الاستخدام: الرواتب، الدرجات، الأداء"
-    echo -e "   ${GREEN}مثال:${NC} $(box_muller 70 15) (μ=70, σ=15)"
+    echo -e "   Usage: Salaries, Grades, Performance"
+    echo -e "   ${GREEN}Example:${NC} $(box_muller 70 15) (μ=70, σ=15)"
     echo ""
     echo -e "${YELLOW}2. Log-Normal:${NC}"
-    echo -e "   الاستخدام: الثروة، الدخل، الأسعار"
-    echo -e "   ${GREEN}مثال:${NC} $(log_normal 8 1.5)"
+    echo -e "   Usage: Wealth, Income, Prices"
+    echo -e "   ${GREEN}Example:${NC} $(log_normal 8 1.5)"
     echo ""
     echo -e "${YELLOW}3. Exponential:${NC}"
-    echo -e "   الاستخدام: أوقات الانتظار، عمر المنتجات"
+    echo -e "   Usage: Waiting times, Product lifespan"
     echo ""
     echo -e "${YELLOW}4. Poisson:${NC}"
-    echo -e "   الاستخدام: عدد الأحداث في فترة"
+    echo -e "   Usage: Number of events in a period"
     echo ""
     echo -e "${YELLOW}5. Binomial:${NC}"
-    echo -e "   الاستخدام: نجاح/فشل، نسبة القبول"
+    echo -e "   Usage: Success/Failure, Acceptance rate"
     echo ""
     echo -e "${YELLOW}6. Weibull:${NC}"
-    echo -e "   الاستخدام: عمر المنتجات، الأعطال"
+    echo -e "   Usage: Product lifespan, Failures"
     echo ""
 }

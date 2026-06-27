@@ -1,35 +1,35 @@
-# ➗ الصيغ والدوال الأساسية
+# ➗ Basic Formulas and Functions
 
-## الصيغ المنطقية
+## Logical Formulas
 ```excel
-=IF(A1>50, "ناجح", "راسب")
+=IF(A1>50, "Pass", "Fail")
 =IF(A1>=90, "A", IF(A1>=80, "B", IF(A1>=70, "C", "F")))
-=AND(A1>0, A1<100)     ← كل الشروط صحيحة
-=OR(A1="نعم", A1="Yes")  ← أي شرط صحيح
-=NOT(A1="خطأ")          ← عكس الشرط
-=IFERROR(صيغة, "خطأ في الحساب")
+=AND(A1>0, A1<100)     ← All conditions true
+=OR(A1="Yes", A1="OK")  ← Any condition true
+=NOT(A1="Error")        ← Inverse condition
+=IFERROR(formula, "Calculation Error")
 ```
 
-## الصيغ النصية
+## Text Formulas
 ```excel
-=CONCAT(A1, " ", B1)   ← دمج نصوص
-=LEFT(A1, 3)           ← 3 أحرف من اليسار
-=RIGHT(A1, 3)          ← 3 أحرف من اليمين
-=MID(A1, 2, 4)         ← 4 أحرف من الموقع 2
-=LEN(A1)               ← عدد الأحرف
-=UPPER(A1)             ← حروف كبيرة
-=LOWER(A1)             ← حروف صغيرة
-=TRIM(A1)              ← إزالة المسافات الزائدة
+=CONCAT(A1, " ", B1)   ← Merge text
+=LEFT(A1, 3)           ← 3 characters from left
+=RIGHT(A1, 3)          ← 3 characters from right
+=MID(A1, 2, 4)         ← 4 characters from position 2
+=LEN(A1)               ← Character count
+=UPPER(A1)             ← Uppercase
+=LOWER(A1)             ← Lowercase
+=TRIM(A1)              ← Remove extra spaces
 ```
 
-## الصيغ التاريخية
+## Date Formulas
 ```excel
-=TODAY()               ← تاريخ اليوم
-=NOW()                 ← التاريخ والوقت
-=YEAR(A1)              ← استخراج السنة
-=MONTH(A1)             ← استخراج الشهر
-=DAY(A1)               ← استخراج اليوم
-=DATEDIF(A1, B1, "Y")  ← الفرق بالسنوات
-=EDATE(A1, 6)          ← إضافة 6 أشهر
-=EOMONTH(A1, 0)        ← آخر يوم في الشهر
+=TODAY()               ← Today's date
+=NOW()                 ← Date and time
+=YEAR(A1)              ← Extract year
+=MONTH(A1)             ← Extract month
+=DAY(A1)               ← Extract day
+=DATEDIF(A1, B1, "Y")  ← Difference in years
+=EDATE(A1, 6)          ← Add 6 months
+=EOMONTH(A1, 0)        ← Last day of the month
 ```

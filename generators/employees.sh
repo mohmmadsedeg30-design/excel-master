@@ -4,8 +4,8 @@
 generate_employees_standalone() {
     local count=${1:-100}
     local output=${2:-"employees_$(date +%Y%m%d_%H%M%S).csv"}
-    echo -e "⏳ جاري توليد $count موظف..."
-    local names=("أحمد محمد" "سارة علي" "محمد عبدالله" "فاطمة أحمد" "خالد سعيد" "نورا حسن" "عمر خالد" "ليلى محمود" "ياسر إبراهيم" "هند مصطفى")
+    echo -e "⏳ Generating $count employees..."
+    local names=("Ahmed Mohamed" "Sarah Ali" "Mohamed Abdullah" "Fatima Ahmed" "Khaled Said" "Nora Hassan" "Omar Khaled" "Layla Mahmoud" "Yasser Ibrahim" "Hind Mostafa")
     local depts=("IT" "HR" "Finance" "Marketing" "Sales" "Operations")
     local positions=("Junior" "Senior" "Manager" "Director" "Specialist")
     echo "ID,Name,Department,Position,Salary,Join_Date,Performance_Rating,Email" > "$output"
@@ -22,7 +22,7 @@ generate_employees_standalone() {
         local email=$(echo "$name" | tr ' ' '.' | tr '[:upper:]' '[:lower:]')"@company.com"
         echo "$i,$name,$dept,$pos,$salary,$join_date,$rating,$email" >> "$output"
     done
-    echo "تم الإنشاء: $output"
+    echo "Created: $output"
 }
 
 if [ "${BASH_SOURCE[0]}" == "${0}" ]; then

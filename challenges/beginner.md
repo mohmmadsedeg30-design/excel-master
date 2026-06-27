@@ -1,13 +1,13 @@
-# 🎯 تحديات المستوى: مبتدئ
+# 🎯 Level: Beginner Challenges
 
-## التحدي 1: جدول الرواتب
-**البيانات:** employees.csv
-**المطلوب:**
-1. احسب متوسط الراتب باستخدام AVERAGE
-2. احسب أعلى وأقل راتب باستخدام MAX و MIN
-3. استخدم COUNTIF لعدد الموظفين في كل قسم
+## Challenge 1: Salary Table
+**Data:** employees.csv
+**Requirements:**
+1. Calculate the average salary using AVERAGE.
+2. Calculate the maximum and minimum salary using MAX and MIN.
+3. Use COUNTIF to count employees in each department.
 
-**الإجابة:**
+**Answer:**
 ```excel
 =AVERAGE(E:E)
 =MAX(E:E)
@@ -15,42 +15,42 @@
 =COUNTIF(C:C, "IT")
 ```
 
-## التحدي 2: تقييم الأداء
-**البيانات:** employees.csv
-**المطلوب:**
-صنف الموظفين: ممتاز (>90)، جيد (70-90)، ضعيف (<70)
-استخدم IF متداخلة
+## Challenge 2: Performance Evaluation
+**Data:** employees.csv
+**Requirements:**
+Classify employees: Excellent (>90), Good (70-90), Poor (<70).
+Use nested IF.
 
-**الإجابة:**
+**Answer:**
 ```excel
-=IF(H2>90, "ممتاز", IF(H2>=70, "جيد", "ضعيف"))
+=IF(H2>90, "Excellent", IF(H2>=70, "Good", "Poor"))
 ```
 
-## التحدي 3: البحث السريع
-**البيانات:** employees.csv
-**المطلوب:**
-ابحث عن راتب موظف باسمه
-استخدم VLOOKUP
+## Challenge 3: Quick Lookup
+**Data:** employees.csv
+**Requirements:**
+Search for an employee's salary by their name.
+Use VLOOKUP.
 
-**الإجابة:**
+**Answer:**
 ```excel
-=VLOOKUP("أحمد", A:E, 5, FALSE)
+=VLOOKUP("Ahmed", A:E, 5, FALSE)
 ```
 
-## التحدي 4: تنسيق الشرطي
-**البيانات:** inventory.csv
-**المطلوب:**
-لوّن الخلايا اللي المخزون فيها أقل من الحد الأدنى بالأحمر
-لوّن الخلايا اللي المخزون فيها أمثل بالأخضر
+## Challenge 4: Conditional Formatting
+**Data:** inventory.csv
+**Requirements:**
+Color cells where stock is less than the minimum in red.
+Color cells where stock is optimal in green.
 
-**الخطوات:**
+**Steps:**
 Home → Conditional Formatting → Highlight Cells Rules → Less Than
 
-## التحدي 5: الجدول المحوري الأول
-**البيانات:** sales.csv
-**المطلوب:**
-اعمل Pivot Table لإجمالي المبيعات حسب المنتج
-صفّح حسب المنطقة
+## Challenge 5: First Pivot Table
+**Data:** sales.csv
+**Requirements:**
+Create a Pivot Table for total revenue by product.
+Filter by region.
 
-**الخطوات:**
+**Steps:**
 Insert → PivotTable → Rows: Product → Values: Sum of Revenue → Filters: Region
