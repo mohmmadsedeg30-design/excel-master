@@ -1,0 +1,23 @@
+# Generated data
+generated-data/
+*.csv
+!examples/*.csv
+
+# Temporary files
+*.tmp
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Backup files
+*.bak
+*.backup
